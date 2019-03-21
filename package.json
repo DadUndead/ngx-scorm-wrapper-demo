@@ -1,13 +1,16 @@
 {
   "name": "ngx-scorm-wrapper-demo",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "local": "ng serve --aot --open --host 0.0.0.0 --disable-host-check",
+    "build": "ng build && npm run manifest && npm run zip",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "manifest": "./node_modules/.bin/gulp manifest",
+    "zip": "./node_modules/.bin/gulp zip"
   },
   "private": true,
   "dependencies": {
@@ -19,7 +22,16 @@
     "@angular/platform-browser": "~7.2.0",
     "@angular/platform-browser-dynamic": "~7.2.0",
     "@angular/router": "~7.2.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-es2015": "^6.24.1",
     "core-js": "^2.5.4",
+    "gulp": "^3.9.1",
+    "gulp-scorm-manifest": "^0.6.4",
+    "gulp-strip-debug": "^3.0.0",
+    "gulp-util": "^3.0.8",
+    "gulp-zip": "^4.2.0",
+    "ngx-scorm-wrapper": "0.0.7",
+    "pump": "^1.0.2",
     "rxjs": "~6.3.3",
     "tslib": "^1.9.0",
     "zone.js": "~0.8.26"
