@@ -51,8 +51,8 @@ export class LmsService {
 
   get score(): number {
     if (this.scormWrapper.LMSIsInitialized) {
-      const scaledScore = +this.scormWrapper.doLMSGetValue('cmi.score.scaled');
-      const rawScore = +this.scormWrapper.doLMSGetValue('cmi.score.raw');
+      const scaledScore = +(this.scormWrapper.doLMSGetValue('cmi.score.scaled') || 0);
+      const rawScore = +(this.scormWrapper.doLMSGetValue('cmi.score.raw') || 0);
 
       return scaledScore * 100 || rawScore;
     }

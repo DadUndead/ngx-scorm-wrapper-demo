@@ -10,7 +10,9 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "manifest": "./node_modules/.bin/gulp manifest",
-    "zip": "./node_modules/.bin/gulp zip"
+    "zip": "./node_modules/.bin/gulp zip",
+    "fake-lms-demo": "./node_modules/.bin/gulp fake-lms-demo",
+    "fakelms": "npm run build && npm run fake-lms-demo && http-server ./demo-fake-lms -o"
   },
   "private": true,
   "dependencies": {
@@ -41,10 +43,13 @@
     "@angular/cli": "~7.3.6",
     "@angular/compiler-cli": "~7.2.0",
     "@angular/language-service": "~7.2.0",
-    "@types/node": "~8.9.4",
     "@types/jasmine": "~2.8.8",
     "@types/jasminewd2": "~2.0.3",
+    "@types/node": "~8.9.4",
     "codelyzer": "~4.5.0",
+    "fakelms": "0.0.9",
+    "gulp-clean": "^0.4.0",
+    "http-server": "^0.11.1",
     "jasmine-core": "~2.99.1",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~4.0.0",

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<manifest identifier="NGX_SCORM_WRAPPER_DEMO1554830572206" version="1" xmlns="http://www.imsglobal.org/xsd/imscp_v1p1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_v1p3" xmlns:adlseq="http://www.adlnet.org/xsd/adlseq_v1p3" xmlns:adlnav="http://www.adlnet.org/xsd/adlnav_v1p3" xmlns:imsss="http://www.imsglobal.org/xsd/imsss" xsi:schemaLocation="http://www.imsglobal.org/xsd/imscp_v1p1 imscp_v1p1.xsd http://www.adlnet.org/xsd/adlcp_v1p3 adlcp_v1p3.xsd http://www.adlnet.org/xsd/adlseq_v1p3 adlseq_v1p3.xsd http://www.adlnet.org/xsd/adlnav_v1p3 adlnav_v1p3.xsd http://www.imsglobal.org/xsd/imsss imsss_v1p0.xsd">
+  <metadata>
+    <schema>ADL SCORM</schema>
+    <schemaversion>2004 3rd Edition</schemaversion>
+  </metadata>
+  <organizations default="NGX_SCORM_WRAPPER_DEMO1554830572206-org">
+    <organization identifier="NGX_SCORM_WRAPPER_DEMO1554830572206-org">
+      <title>NGX_SCORM_WRAPPER_DEMO</title>
+      <item identifier="item_1" identifierref="resource_1">
+        <title>NGX_SCORM_WRAPPER_DEMO</title>
+      </item>
+    </organization>
+  </organizations>
+  <resources>
+    <resource identifier="resource_1" type="webcontent" href="index.html" adlcp:scormType="sco">
+      <file href="es2015-polyfills.js"/>
+      <file href="es2015-polyfills.js.map"/>
+      <file href="favicon.ico"/>
+      <file href="index.html"/>
+      <file href="main.js"/>
+      <file href="main.js.map"/>
+      <file href="polyfills.js"/>
+      <file href="polyfills.js.map"/>
+      <file href="runtime.js"/>
+      <file href="runtime.js.map"/>
+      <file href="styles.js"/>
+      <file href="styles.js.map"/>
+      <file href="vendor.js"/>
+      <file href="vendor.js.map"/>
+    </resource>
+  </resources>
+</manifest>
